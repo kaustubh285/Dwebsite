@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from skills.views import Prg_skills
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/skills/', Prg_skills.as_view()),
 ]
