@@ -25,7 +25,7 @@ SECRET_KEY = 'toy652*f+hm-x97jzp+!h+s#pyoubt)i8r(4grr9v4)n)0tpnl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8b7c47e030ab.ngrok.io','localhost','127.0.0.1']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'skills',
+    'frontend',
 ]
 
 MIDDLEWARE = [
