@@ -1,10 +1,9 @@
-# README Boilerplate
-
-A template of README best practices to make your README simple to understand and easy to use.
+# DJango-REact 
+Creating a personal website using Django and React.
 
 ## Installation
 
-Download to your project directory, Install the dev dependencies and just from pipenv.lock file.
+You can clone this project , and then install the dev dependencies mentioned in the package.json file and also from pipenv.lock file.
 
 ## Usage
 
