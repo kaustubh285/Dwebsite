@@ -1,0 +1,82 @@
+.myskill > div:nth-child(12n + 1) {
+  margin: 10px;
+  padding: 10px;
+
+  background-color: #ff0052;
+}
+
+.myskill > div:nth-child(12n + 2) {
+  margin: 10px;
+  padding: 10px;
+
+  background-color: #00c0be;
+}
+
+.myskill > div:nth-child(12n + 3) {
+  margin: 10px;
+  padding: 10px;
+
+  background-color: #56c9b7;
+}
+
+.myskill > div:nth-child(12n + 4) {
+  margin: 10px;
+  padding: 10px;
+
+  background-color: #5b6b80;
+}
+
+.myskill > div:nth-child(12n + 5) {
+  margin: 10px;
+  padding: 10px;
+
+  background-color: #ffbb4c;
+}
+
+.myskill > div:nth-child(12n + 6) {
+  margin: 10px;
+  padding: 10px;
+
+  background-color: #ffbb4c;
+}
+
+.myskill > div:nth-child(12n + 7) {
+  margin: 10px;
+  padding: 10px;
+
+  background-color: #f4f4f4;
+}
+.myskill > div:nth-child(12n + 8) {
+  margin: 10px;
+  padding: 10px;
+
+  background-color: #7cd06f;
+}
+
+.myskill > div:nth-child(12n + 9) {
+  margin: 10px;
+  padding: 10px;
+
+  background-color: #3c3636;
+}
+
+.myskill > div:nth-child(12n + 10) {
+  margin: 10px;
+  padding: 10px;
+
+  background-color: #703a63;
+}
+
+.myskill > div:nth-child(12n + 11) {
+  margin: 10px;
+  padding: 10px;
+
+  background-color: #45698c;
+}
+
+.myskill > div:nth-child(12n + 12) {
+  margin: 10px;
+  padding: 10px;
+
+  background-color: #193b54;
+}
