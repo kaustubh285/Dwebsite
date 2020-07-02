@@ -4,7 +4,7 @@ export class Navb extends Component {
   render() {
     return (
       <Fragment>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar  navbar-expand-lg navbar-dark bg-dark">
           <a className="navbar-brand" href="#">
             Kaustubh Deshpande
           </a>
@@ -22,29 +22,24 @@ export class Navb extends Component {
 
           <div className="collapse navbar-collapse" id="navbarColor01">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  Home <span className="sr-only">(current)</span>
+              <li className="nav-item">
+                <a className="nav-link" href="#skills">
+                  Skills
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Courses/Workshops
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#projects">
                   Projects
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Certification
+                <a className="nav-link" href="#courses">
+                  Courses/Workshops
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Education
+                <a className="nav-link" href="#certificates">
+                  Certification
                 </a>
               </li>
               <li className="nav-item">

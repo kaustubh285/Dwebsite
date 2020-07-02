@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
-import Myproject from "./layout/Myproject";
+import Mycertificates from "./layout/Mycertificates";
 
-function Projects() {
-  const [projects, setProject] = useState([]);
+function Certificates() {
+  const [certificates, setCertificates] = useState([]);
 
-  const url = "http://localhost:8000/api/projects/";
+  const url = "http://localhost:8000/api/certificates/";
 
   useEffect(() => {
     try {
@@ -14,7 +14,7 @@ function Projects() {
       res
         .then((response) => response.json())
         .then((arrayOfUsers) => {
-          setProject(arrayOfUsers);
+          setCertificates(arrayOfUsers);
         });
     } catch (err) {
       console.error(err);
@@ -23,11 +23,11 @@ function Projects() {
 
   return (
     <div className="myproject d-flex bg-secondary flex-wrap mt-6">
-      {projects.map((oneproject) => (
-        <Myproject oneproject={oneproject} key={oneproject.id} />
+      {certificates.map((onecerti) => (
+        <Mycertificates onecerti={onecerti} key={onecerti.id} />
       ))}
     </div>
   );
 }
 
-ReactDOM.render(<Projects />, document.getElementById("projects"));
+ReactDOM.render(<Certificates />, document.getElementById("certificates"));

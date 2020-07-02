@@ -1,0 +1,94 @@
+.mycourse > div:nth-child(12n + 1) {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: #ffc400;
+}
+
+.mycourse > div:nth-child(12n + 2) {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: #00c0be;
+}
+
+.mycourse > div:nth-child(12n + 3) {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: #56c9b7;
+}
+
+.mycourse > div:nth-child(12n + 4) {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: #5b6b80;
+}
+
+.mycourse > div:nth-child(12n + 5) {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: #ffbb4c;
+}
+
+.mycourse > div:nth-child(12n + 6) {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: #ffbb4c;
+}
+
+.mycourse > div:nth-child(12n + 7) {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: #f4f4f4;
+}
+.mycourse > div:nth-child(12n + 8) {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: #7cd06f;
+}
+
+.mycourse > div:nth-child(12n + 9) {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: #3c3636;
+}
+
+.mycourse > div:nth-child(12n + 10) {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: #703a63;
+}
+
+.mycourse > div:nth-child(12n + 11) {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: #45698c;
+}
+
+.mycourse > div:nth-child(12n + 12) {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: #193b54;
+}
