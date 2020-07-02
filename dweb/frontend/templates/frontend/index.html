@@ -5,6 +5,8 @@
     <title>Django-React</title>
     <meta name="description" content="" />
     <link rel="stylesheet" href="/static/css/skills.css" />
+    <link rel="stylesheet" href="/static/css/projects.css" />
+    <link rel="stylesheet" href="/static/css/course.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -14,21 +16,30 @@
       rel="shortcut icon"
       href="https://colorlib.com/preview/theme/satner/img/banner/home-right.png"
     />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .oneskilled {
+        padding: 50px;
+        background-color: green;
+        transition: transform 0.2s; /* Animation */
+        margin: 0 auto;
+      }
+
+      .oneskilled:hover {
+        transform: scale(
+          1.2
+        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+    </style>
   </head>
 
   <body>
     <div id="app"></div>
 
-    {% if request.user.is_authenticated %}
-    <div
-      class="p-2 mt-9 card border-success text-lg-right text-center pb-0 mb-0"
-    >
-      <h6 class="pt-2">
-        Hello
-        <a href="/admin" style="text-decoration: none;">{{request.user}}</a>
-      </h6>
-    </div>
-    {% endif %}
     <section class="pb-10 mb-6" style="min-height: 350px;">
       <div class="container d-flex pt-5">
         <div class="row">
@@ -47,13 +58,30 @@
     </section>
     {% load static %}
 
-    <section class="container" style="min-height: 500px;" id="skills"></section>
+    <section
+      class="container pt-3"
+      style="min-height: 500px;"
+      id="skills"
+    ></section>
 
     <section
-      class="container"
+      class="container pt-3"
       style="min-height: 500px;"
       id="projects"
     ></section>
+
+    <section
+      class="container pt-3"
+      style="min-height: 500px;"
+      id="courses"
+    ></section>
+
+    <section
+      class="container pt-3"
+      style="min-height: 500px;"
+      id="certificates"
+    ></section>
+
     <script src="/static/frontend/main.js"></script>
 
     <script

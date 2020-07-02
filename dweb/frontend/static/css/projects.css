@@ -1,0 +1,94 @@
+.myproject > div:nth-child(12n + 1) {
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 450px;
+  background-color: #ff4800;
+}
+
+.myproject > div:nth-child(12n + 2) {
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 450px;
+  background-color: #00c0be;
+}
+
+.myproject > div:nth-child(12n + 3) {
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 450px;
+  background-color: #56c9b7;
+}
+
+.myproject > div:nth-child(12n + 4) {
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 450px;
+  background-color: #5b6b80;
+}
+
+.myproject > div:nth-child(12n + 5) {
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 450px;
+  background-color: #ffbb4c;
+}
+
+.myproject > div:nth-child(12n + 6) {
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 450px;
+  background-color: #ffbb4c;
+}
+
+.myproject > div:nth-child(12n + 7) {
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 450px;
+  background-color: #f4f4f4;
+}
+.myproject > div:nth-child(12n + 8) {
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 450px;
+  background-color: #7cd06f;
+}
+
+.myproject > div:nth-child(12n + 9) {
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 450px;
+  background-color: #3c3636;
+}
+
+.myproject > div:nth-child(12n + 10) {
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 450px;
+  background-color: #703a63;
+}
+
+.myproject > div:nth-child(12n + 11) {
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 450px;
+  background-color: #45698c;
+}
+
+.myproject > div:nth-child(12n + 12) {
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 450px;
+  background-color: #193b54;
+}
