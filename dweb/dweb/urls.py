@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from skills.views import Prg_skills, MyProjects, MyCourses, MyCertificates
+from skills.views import Prg_skills, MyProjects, MyCourses, MyCertificates, MyExperiences
 
 urlpatterns = [
     path('', include('frontend.urls')),
@@ -24,4 +24,5 @@ urlpatterns = [
     path('api/projects/', MyProjects.as_view()),
     path('api/courses/', MyCourses.as_view()),
     path('api/certificates/', MyCertificates.as_view()),
+    path('api/experience/', MyExperiences.as_view()),
 ]

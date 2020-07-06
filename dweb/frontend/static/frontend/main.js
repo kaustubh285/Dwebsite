@@ -122,6 +122,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 
 /***/ }),
 
+/***/ "./dweb/frontend/src/components/Experience.js":
+/*!****************************************************!*\
+  !*** ./dweb/frontend/src/components/Experience.js ***!
+  \****************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _layout_Myexp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layout/Myexp */ \"./dweb/frontend/src/components/layout/Myexp.js\");\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\nfunction Experience() {\n  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])([]),\n      _useState2 = _slicedToArray(_useState, 2),\n      experience = _useState2[0],\n      setExperience = _useState2[1];\n\n  var url = \"http://localhost:8000/api/experience/\";\n  Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useEffect\"])(function () {\n    try {\n      var res = fetch(url); // const data = res.json();\n\n      res.then(function (response) {\n        return response.json();\n      }).then(function (arrayOfUsers) {\n        setExperience(arrayOfUsers);\n      });\n    } catch (err) {\n      console.error(err);\n    }\n  }, []);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"myexp d-flex bg-secondary flex-wrap mt-6\"\n  }, experience.map(function (oneexp) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layout_Myexp__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n      oneexp: oneexp,\n      key: oneexp.id\n    });\n  }));\n}\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Experience, null), document.getElementById(\"experiences\"));\n\n//# sourceURL=webpack:///./dweb/frontend/src/components/Experience.js?");
+
+/***/ }),
+
 /***/ "./dweb/frontend/src/components/MainBody.js":
 /*!**************************************************!*\
   !*** ./dweb/frontend/src/components/MainBody.js ***!
@@ -194,6 +206,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./dweb/frontend/src/components/layout/Myexp.js":
+/*!******************************************************!*\
+  !*** ./dweb/frontend/src/components/layout/Myexp.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return MyExperience; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction MyExperience(_ref) {\n  var oneexp = _ref.oneexp;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"expcontainer\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h3\", {\n    className: \"text-center text-dark\",\n    style: {\n      minHeight: \"30px\"\n    }\n  }, oneexp.org), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n    className: \"expimage\",\n    src: oneexp.logo\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"expmiddle\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"hr\", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"small\", {\n    className: \"exptext w-100\"\n  }, oneexp.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"hr\", null)));\n}\n\n//# sourceURL=webpack:///./dweb/frontend/src/components/layout/Myexp.js?");
+
+/***/ }),
+
 /***/ "./dweb/frontend/src/components/layout/Myproject.js":
 /*!**********************************************************!*\
   !*** ./dweb/frontend/src/components/layout/Myproject.js ***!
@@ -238,7 +262,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/App */ \"./dweb/frontend/src/components/App.js\");\n/* harmony import */ var _components_MainBody__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/MainBody */ \"./dweb/frontend/src/components/MainBody.js\");\n/* harmony import */ var _components_Skills__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Skills */ \"./dweb/frontend/src/components/Skills.js\");\n/* harmony import */ var _components_Projects__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Projects */ \"./dweb/frontend/src/components/Projects.js\");\n/* harmony import */ var _components_Courses__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Courses */ \"./dweb/frontend/src/components/Courses.js\");\n/* harmony import */ var _components_Certificates__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Certificates */ \"./dweb/frontend/src/components/Certificates.js\");\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./dweb/frontend/src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/App */ \"./dweb/frontend/src/components/App.js\");\n/* harmony import */ var _components_MainBody__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/MainBody */ \"./dweb/frontend/src/components/MainBody.js\");\n/* harmony import */ var _components_Skills__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Skills */ \"./dweb/frontend/src/components/Skills.js\");\n/* harmony import */ var _components_Projects__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Projects */ \"./dweb/frontend/src/components/Projects.js\");\n/* harmony import */ var _components_Courses__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Courses */ \"./dweb/frontend/src/components/Courses.js\");\n/* harmony import */ var _components_Certificates__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Certificates */ \"./dweb/frontend/src/components/Certificates.js\");\n/* harmony import */ var _components_Experience__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Experience */ \"./dweb/frontend/src/components/Experience.js\");\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./dweb/frontend/src/index.js?");
 
 /***/ }),
 

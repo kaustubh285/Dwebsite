@@ -1,0 +1,130 @@
+.myexp > div:nth-child(5n + 1) {
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  height: 320px;
+  background-color: #ddf3f5;
+}
+
+.myexp > div:nth-child(5n + 2) {
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  height: 320px;
+  background-color: #e5edb7;
+}
+
+.myexp > div:nth-child(5n + 3) {
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  height: 320px;
+  background-color: #f2d7b4;
+}
+
+.myexp > div:nth-child(5n + 4) {
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  height: 320px;
+  background-color: #df9881;
+}
+
+.myexp > div:nth-child(5n + 5) {
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  height: 320px;
+  background-color: #f9d89c;
+}
+
+@media only screen and (max-width: 600px) {
+  .myexp > div:nth-child(5n + 1) {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    min-height: 320px;
+    height: auto;
+    background-color: #ddf3f5;
+  }
+
+  .myexp > div:nth-child(5n + 2) {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    min-height: 320px;
+    height: auto;
+    background-color: #e5edb7;
+  }
+
+  .myexp > div:nth-child(5n + 3) {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    min-height: 320px;
+    height: auto;
+    background-color: #f2d7b4;
+  }
+
+  .myexp > div:nth-child(5n + 4) {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    min-height: 320px;
+    height: auto;
+    background-color: #df9881;
+  }
+
+  .myexp > div:nth-child(5n + 5) {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    min-height: 320px;
+    height: auto;
+    background-color: #f9d89c;
+  }
+}
+.expcontainer {
+  position: relative;
+  width: 50%;
+}
+
+.expimage {
+  object-fit: cover;
+  padding-top: 20px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: fit-content;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.expmiddle {
+  width: 100% !important;
+  padding-left: 3px;
+  padding-right: 3px;
+  transition: 0.7s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.expcontainer:hover .expimage {
+  opacity: 0;
+}
+
+.expcontainer:hover .expmiddle {
+  opacity: 1;
+}
+
+.exptext {
+  font-size: large;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
